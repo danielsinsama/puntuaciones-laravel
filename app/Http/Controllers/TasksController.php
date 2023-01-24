@@ -14,7 +14,8 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks = Task::all();
+        $userId = Auth::user()->id;
+        $tasks = Task::where('userId',$userId)->get();
 
         return view('task.index')->with('tasks',$tasks);
         //

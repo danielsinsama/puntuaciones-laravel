@@ -15,7 +15,7 @@
     <div class="row justify-content-center">
         <table class="table table-bordered">
         <!-- Fila   : table row -->
-        <thead class="table-info">
+        <thead class="table-secondary">
             <tr>
                 <!-- table data -->
                 <th>   
@@ -28,7 +28,7 @@
                     Descripcion
                 </th>
                 <th class="text-center">   
-                    Score
+                    Puntos
                 </th>
                 <th class="text-center">   
                     Editar
