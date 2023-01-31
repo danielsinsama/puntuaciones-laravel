@@ -50,10 +50,10 @@
                             @endif
                         @else
                             <li class="nav-item">
-                                <a class="nav-link link-light" href="">Tareas</a>
+                                <a class="nav-link link-light" href="{{url('tasks')}}">Tareas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link-light" href="">Sumar puntos</a>
+                                <a class="nav-link link-light" href="{{url('score-points')}}">Sumar puntos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link link-light" href="">Ver logros</a>
