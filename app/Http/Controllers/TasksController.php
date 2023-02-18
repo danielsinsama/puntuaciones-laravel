@@ -12,11 +12,15 @@ class TasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         $userId = Auth::user()->id;
         $tasks = Task::where('userId',$userId)->get();
-
         return view('task.index')->with('tasks',$tasks);
         //
     }

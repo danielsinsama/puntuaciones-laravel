@@ -155,6 +155,8 @@ return [
     */
 
     'providers' => [
+        	
+        Darryldecode\Cart\CartServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...
@@ -210,6 +212,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
     ])->toArray(),
 
 ];

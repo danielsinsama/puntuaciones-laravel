@@ -26,3 +26,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/score-points',[CompletedTasksController::class,'index']);
 Route::post('/score-points',[CompletedTasksController::class,'add']);
+Route::delete('/score-points/{id}',[CompletedTasksController::class,'remove']);
